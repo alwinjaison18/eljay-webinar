@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import SuccessModal from "./components/SuccessModal";
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -638,6 +639,47 @@ function App() {
         isOpen={showSuccess}
         onClose={() => setShowSuccess(false)}
       />
+
+      {/* Footer with Policy Links */}
+      <footer className="bg-slate-900 border-t border-slate-700 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center md:text-left">
+            <Link
+              to="/cancellation-refund"
+              className="text-slate-400 hover:text-white transition-colors font-spaceGrotesk text-sm"
+            >
+              Cancellation & Refund
+            </Link>
+            <Link
+              to="/terms-conditions"
+              className="text-slate-400 hover:text-white transition-colors font-spaceGrotesk text-sm"
+            >
+              Terms & Conditions
+            </Link>
+            <Link
+              to="/shipping-delivery"
+              className="text-slate-400 hover:text-white transition-colors font-spaceGrotesk text-sm"
+            >
+              Shipping & Delivery
+            </Link>
+            <Link
+              to="/privacy-policy"
+              className="text-slate-400 hover:text-white transition-colors font-spaceGrotesk text-sm"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/contact"
+              className="text-slate-400 hover:text-white transition-colors font-spaceGrotesk text-sm"
+            >
+              Contact Us
+            </Link>
+          </div>
+          <div className="mt-6 text-center text-slate-500 text-sm font-spaceGrotesk">
+            © 2025 Eljay Medical Staffing India Pvt Ltd. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
