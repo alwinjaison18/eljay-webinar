@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App.jsx";
 import CancellationRefund from "./pages/CancellationRefund.jsx";
 import TermsConditions from "./pages/TermsConditions.jsx";
-import ShippingDelivery from "./pages/ShippingDelivery.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import "./index.css";
@@ -16,7 +15,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />} />
         <Route path="/cancellation-refund" element={<CancellationRefund />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
-        <Route path="/shipping-delivery" element={<ShippingDelivery />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
